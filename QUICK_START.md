@@ -6,14 +6,14 @@
 
 ### 1. Install Java & MySQL
 ```bash
-# Windows: Download from oracle.com/openjdk.org
+# Windows: Download from openjdk.org
 # macOS: brew install openjdk@17 mysql
 ```
 
 ### 2. Clone & Setup
 ```bash
-git clone https://github.com/yourusername/LibraryManagment.git
-cd LibraryManagment
+git clone https://github.com/rsreehari/LibraryManagement.git
+cd LibraryManagement
 ```
 
 ### 3. Database Setup
@@ -29,7 +29,7 @@ Edit `lib/DatabaseConnection.java` - change password to yours
 ### 5. Run!
 ```bash
 # Windows: Double-click run.bat
-# macOS: ./run.sh
+# macOS: javac -cp "lib/*:src/*" lib/*.java && java -cp "lib:src/*" LibraryManagement
 ```
 
 ## 🎯 That's it! 
