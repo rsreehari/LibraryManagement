@@ -101,8 +101,7 @@ A complete Java-based console application for managing library books, members, a
    ```
 
 6. **Check what files you have:**
-   - **Windows**: `dir`
-   - **macOS**: `ls`
+   - **Type**: `dir`
 
 ### Step 4: Setup Database
 
