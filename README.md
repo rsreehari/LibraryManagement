@@ -1,6 +1,6 @@
 # 📚 Library Management System
 
-A complete Java-based console application for managing library books, members, and book issues/returns. Perfect for group projects and learning database management with Java.
+A complete Java-based console application for managing library books, members, and book issues/returns. Optimized for Windows users. Perfect for group projects and learning database management with Java.
 
 ## ✨ Features
 
@@ -8,7 +8,7 @@ A complete Java-based console application for managing library books, members, a
 - **👥 Member Management**: Add, display, search, delete, and update member records  
 - **📋 Issue/Return System**: Issue books to members and track returns
 - **🗄️ MySQL Database**: Persistent storage with proper database relationships
-- **🖥️ Cross-Platform**: Works on Windows and macOS
+- **🖥️ Windows**: Optimized for Windows users
 
 ## 🛠️ Requirements
 
@@ -54,18 +54,7 @@ A complete Java-based console application for managing library books, members, a
    ```
 4. **If you see version numbers, Java is working!**
 
-#### macOS:
-1. **Open Terminal** (press Cmd + Space, type "Terminal", press Enter)
-2. **Copy and paste this command:**
-   ```bash
-   brew install openjdk@17
-   ```
-3. **Press Enter and wait for it to finish**
-4. **Test if Java works:**
-   ```bash
-   java -version
-   javac -version
-   ```
+
 
 ### Step 2: Install MySQL Server
 
@@ -90,30 +79,14 @@ A complete Java-based console application for managing library books, members, a
 4. **Make sure it says "Running"** next to it
 5. **If not, right-click it and select "Start"**
 
-#### macOS:
-1. **Open Terminal**
-2. **Copy and paste this command:**
-   ```bash
-   brew install mysql
-   ```
-3. **Press Enter and wait for it to finish**
-4. **Start MySQL:**
-   ```bash
-   brew services start mysql
-   ```
-5. **Set a password:**
-   ```bash
-   mysql_secure_installation
-   ```
-6. **Follow the prompts** (say "Y" to everything, create a password)
+
 
 ### Step 3: Get the Project Files
 
-1. **Open Command Prompt (Windows) or Terminal (macOS)**
+1. **Open Command Prompt** (press Windows key + R, type "cmd", press Enter)
 
 2. **Go to a folder where you want to put the project:**
-   - **Windows**: `cd C:\Users\YourName\Desktop`
-   - **macOS**: `cd ~/Desktop`
+   - **Example**: `cd C:\Users\YourName\Desktop`
 
 3. **Copy and paste this command:**
    ```bash
@@ -133,10 +106,10 @@ A complete Java-based console application for managing library books, members, a
 
 ### Step 4: Setup Database
 
-1. **Open Command Prompt/Terminal**
+1. **Open Command Prompt** (press Windows key + R, type "cmd", press Enter)
 
 2. **Connect to MySQL:**
-   ```bash
+   ```cmd
    mysql -u root -p
    ```
 
@@ -163,7 +136,7 @@ A complete Java-based console application for managing library books, members, a
 
 ### Step 5: Update Database Password
 
-1. **Open File Explorer (Windows) or Finder (macOS)**
+1. **Open File Explorer** (press Windows key + E)
 
 2. **Go to the LibraryManagement folder**
 
@@ -171,7 +144,7 @@ A complete Java-based console application for managing library books, members, a
 
 4. **Right-click on "DatabaseConnection.java"**
 
-5. **Select "Open with" → "Notepad" (Windows) or "TextEdit" (macOS)**
+5. **Select "Open with" → "Notepad"**
 
 6. **Find this line:**
    ```java
@@ -180,7 +153,7 @@ A complete Java-based console application for managing library books, members, a
 
 7. **Change "SREEHARI@123" to your MySQL password**
 
-8. **Save the file** (Ctrl+S on Windows, Cmd+S on macOS)
+8. **Save the file** (press Ctrl+S)
 
 ### Step 6: Run the Application
 
@@ -202,18 +175,7 @@ A complete Java-based console application for managing library books, members, a
    ```
 5. **Press Enter to run**
 
-#### macOS Users:
-1. **Open Terminal** in the LibraryManagement folder
-2. **Type this command:**
-   ```bash
-   javac -cp "lib/*:src/*" lib/*.java
-   ```
-3. **Press Enter and wait**
-4. **Type this command:**
-   ```bash
-   java -cp "lib:src/*" LibraryManagement
-   ```
-5. **Press Enter to run**
+
 
 ## 🎯 How to Use the Application
 
@@ -281,7 +243,7 @@ src/
 └── mysql-connector-j-9.4.0.jar  # MySQL driver (don't delete!)
 
 database_setup.sql         # Creates the database (run this first)
-run.bat                    # Windows: double-click to run
+run.bat                    # Double-click to run (Windows only)
 .gitignore                 # Git file (don't worry about this)
 README.md                  # This file you're reading now
 ```
